@@ -1,5 +1,6 @@
 const parentElement = document.getElementById("parentElement");
 const showMessage = document.getElementById("showMessage");
+const hatePageContent = document.getElementById("hatePageContent");
 const changeColor = document.body.style;
 
 const propose = () => {
@@ -9,8 +10,10 @@ const propose = () => {
     "linear-gradient(116.82deg, #ff94e7 0%, #27cbff 100%)";
 };
 
-const proposeNo = () => {
-  window.location.href = "hate.html"; // not working
+const showHatePage = () => {
+  parentElement.style.display = "none";
+  showMessage.style.display = "none";
+  hatePageContent.style.display = "block";
 };
 
 var textWrapper = document.querySelector(".ml6 .letters");

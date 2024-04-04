@@ -13,6 +13,36 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: rgba(255, 73, 73, 0.81);
+        font-family: "Nunito", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .hate-page {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+
+      .hate-page h1 {
+        color: #ff5733;
+        font-size: 36px;
+      }
+
+      .hate-page p {
+        color: #333;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    </style>
   </head>
   <body>
     <div class="position-absolute top-50 start-50 translate-middle">
@@ -30,17 +60,18 @@
         <h1>Did you love me? 🥰</h1>
         <div class="d-flex justify-content-center">
           <button onclick="propose()" class="btn btn-primary">
-            Yes! of couse..!!
+            Yes! of course..!!
           </button>
           <br />
-          <button onclick="proposeNo()" class="btn btn-primary">
+          <button onclick="showHatePage()" class="btn btn-primary">
             nope, never..!!
           </button>
         </div>
       </div>
       <div
-        class="position-absolute top-50 start-50 translate-middle"
         id="showMessage"
+        class="position-absolute top-50 start-50 translate-middle"
+        style="display: none"
       >
         <lottie-player
           src="https://assets1.lottiefiles.com/packages/lf20_utsfwa3k.json"
@@ -55,6 +86,9 @@
             <span class="letters">I Love you!</span>
           </span>
         </h1>
+      </div>
+      <div id="hatePageContent" class="hate-page">
+        <h1>Sorry, it seems our feelings don't match. Goodbye</h1>
       </div>
     </div>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
