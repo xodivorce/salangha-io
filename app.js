@@ -10,7 +10,7 @@ const propose = () => {
 };
 
 const proposeNo = () => {
-  window.location.href = "hate.html"; // Redirect to hate.html
+  window.location.href = "hate.html"; // not working
 };
 
 var textWrapper = document.querySelector(".ml6 .letters");
