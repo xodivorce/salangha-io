@@ -1,12 +1,16 @@
 const parentElement = document.getElementById("parentElement");
-const showMassage = document.getElementById("showMassage");
+const showMessage = document.getElementById("showMessage");
 const changeColor = document.body.style;
 
-propose = () => {
+const propose = () => {
   parentElement.style.display = "none";
   showMessage.style.display = "block";
   changeColor.background =
     "linear-gradient(116.82deg, #ff94e7 0%, #27cbff 100%)";
+};
+
+const proposeNo = () => {
+  window.location.href = "hate.html"; // Redirect to hate.html
 };
 
 var textWrapper = document.querySelector(".ml6 .letters");
